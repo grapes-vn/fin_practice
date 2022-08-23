@@ -6,7 +6,7 @@ def test_authorisation(web_browser):
     page = MainPage(web_browser)
     page.vhod.click()
     page.email.send_keys('grapes-vn@ngs.ru')
-    page.password.send_keys('VinTur')
+    page.password.send_keys('password')
     page.login_button.click()
     assert page.cabinet.find()
 
